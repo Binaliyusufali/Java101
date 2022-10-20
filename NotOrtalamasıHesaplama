@@ -1,0 +1,54 @@
+import java.util.Scanner;
+
+public class OrtHesap {
+    public static void main(String[] args) {
+        // Değerler tanımlandı
+        int matematik;
+        int fizik;
+        int kimya;
+        int turkce;
+        int tarih;
+        int muzik;
+        int ortalama;
+        boolean sonuc;
+        String cikti;
+
+        // Kullanıcıdan veri girişi alındı
+
+        System.out.print ("Matematik Notunu Giriniz: ");
+        Scanner input = new Scanner(System.in);
+        matematik = input.nextInt();
+
+        System.out.print ("Fizik Notunu Giriniz: ");
+        Scanner input1 = new Scanner(System.in);
+        fizik = input.nextInt();
+
+        System.out.print ("Kimya Notunu Giriniz: ");
+        Scanner input2 = new Scanner(System.in);
+        kimya = input.nextInt();
+
+        System.out.print ("Türkçe Notunu Giriniz: ");
+        Scanner input3 = new Scanner(System.in);
+        turkce = input.nextInt();
+
+        System.out.print ("Tarih Notunu Giriniz: ");
+        Scanner input4 = new Scanner(System.in);
+        tarih = input.nextInt();
+
+        System.out.print ("Müzik Notunu Giriniz: ");
+        Scanner input5 = new Scanner(System.in);
+        muzik = input.nextInt();
+
+        // Hesaplama işlemleri başlıyor
+        ortalama = (matematik + fizik + kimya + turkce + tarih + muzik) / 6;
+        System.out.println("Not Ortalamanız: " + ortalama);
+
+        //Sınıfı Geçti veya Kaldı
+
+        sonuc = ortalama > 60;
+        cikti = sonuc ? "Sınıfı Geçtiniz" : "Sınıfta Kaldınız";
+
+        System.out.println(cikti);
+
+
+    }
