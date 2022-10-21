@@ -1,0 +1,27 @@
+package Giris;
+import java.util.Scanner;
+
+    public class KDVHesaplama {
+        public static void main(String[] args) {
+            double tutar, kdvliTutar,kdvOrani1 = 0.18 , kdvOrani2 = 0.8, yenitutar;
+
+            System.out.print ("Tutarı giriniz: ");
+            Scanner input = new Scanner(System.in);
+            tutar = input.nextDouble();
+
+            double kdvTutari = tutar < 1000 ? (tutar * kdvOrani1) : (tutar * kdvOrani2);
+            yenitutar = tutar + kdvTutari ;
+
+            System.out.println("KDV'siz tutar = " + tutar);
+            System.out.println("KDV tutarı = " + kdvTutari);
+            System.out.println("KDV'li tutar = " + yenitutar);
+
+
+            System.out.println("Girdiğiniz KDV'siz Tutar: " + tutar);
+            System.out.println("KDV Tutarı: " + kdvTutari) ;
+            System.out.println("KDV'li Tutar: " + kdvliTutar);
+
+        }
+}
+
+www.patika.dev
