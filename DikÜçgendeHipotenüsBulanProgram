@@ -1,0 +1,21 @@
+package Giris;
+import java.util.Scanner;
+
+public class AlanHesaplama {
+    public static void main(String[] args) {
+        int a , b ;
+        double c ;
+
+        System.out.print("1.kenarı giriniz: ");
+        Scanner input = new Scanner(System.in);
+        a = input.nextInt();
+
+        System.out.print("2.kenarı giriniz: ");
+        Scanner input1 = new Scanner(System.in);
+        b = input1.nextInt();
+
+        c = Math.sqrt((a * a) + ( b * b) );
+        System.out.println("Hipotenüs: " + c);
+
+    }
+}
