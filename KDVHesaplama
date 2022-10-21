@@ -16,11 +16,6 @@ import java.util.Scanner;
             System.out.println("KDV tutarı = " + kdvTutari);
             System.out.println("KDV'li tutar = " + yenitutar);
 
-
-            System.out.println("Girdiğiniz KDV'siz Tutar: " + tutar);
-            System.out.println("KDV Tutarı: " + kdvTutari) ;
-            System.out.println("KDV'li Tutar: " + kdvliTutar);
-
         }
 }
 
