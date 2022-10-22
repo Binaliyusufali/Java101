@@ -1,0 +1,20 @@
+package Giris;
+import  java.util.Scanner;
+
+public class DaireAlani {
+    public static void main(String[] args) {
+        int yaricap;
+        double pi = 3.14 , alan, cevre;
+
+        System.out.print("Yarı Çapı Giriniz: ");
+        Scanner input = new Scanner(System.in);
+        yaricap = input.nextInt();
+
+        alan = pi * yaricap * yaricap ;
+        cevre = 2 * pi * yaricap;
+
+        System.out.println("Dairenin Alanı: " + alan);
+        System.out.println("Dairenin Çevresi: " + cevre);
+    }
+
+}
