@@ -1,0 +1,23 @@
+package Giris;
+import java.util.Scanner;
+
+public class VucutKitleEndeksi {
+    public static void main(String[] args) {
+
+
+        double boy, kilo, vki;
+
+        System.out.print("Boyunuzu Giriniz: ");
+        Scanner inp= new Scanner(System.in);
+        boy = inp.nextDouble();
+
+        System.out.print("Kilonuzu Giriniz: ");
+        Scanner inp1= new Scanner(System.in);
+        kilo = inp.nextDouble();
+
+        vki = kilo / (boy * boy);
+
+        System.out.println("Vücut Kitle İndeksiniz " + vki );
+
+    }
+}
