@@ -1,0 +1,21 @@
+package Giris;
+import  java.util.Scanner;
+public class TaksimetreProg {
+    public static void main(String[] args) {
+
+
+        double kmUcreti = 2.20 , odenecekTutar, mesafe , taksimetreAcilis = 10.0, enaz;
+
+        System.out.print("Gidilen Mesafeyi Giriniz: ");
+        Scanner giris = new Scanner(System.in);
+        mesafe = giris.nextDouble();
+
+        odenecekTutar = (mesafe * kmUcreti) + taksimetreAcilis;
+        enaz = odenecekTutar <20 ? (enaz = 20) : (enaz = odenecekTutar);
+
+        System.out.println(mesafe + " Km yol gittiniz.");
+        System.out.println("Ödemeniz gereken tutar: " + odenecekTutar);
+        System.out.println("Minimum ödenmesi gereken tutar: " + enaz);
+    }
+}
+patika.dev
