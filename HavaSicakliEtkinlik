@@ -1,0 +1,25 @@
+package Giris;
+import  java.util.Scanner;
+
+public class HavaSicakliginaEtkinlik {
+    public static void main(String[] args) {
+        int sicaklik;
+        Scanner inp = new Scanner(System.in);
+
+        System.out.println("Haca sıcaklığı kaç derece? ");
+        sicaklik = inp.nextInt();
+
+        if (sicaklik < 5 ){
+            System.out.println("Bugün size KAYAK etkinliğini yapamayı öneriyoruz.");
+        } else if (sicaklik >= 5 && sicaklik <= 25 ) {
+            if (sicaklik <= 15){
+                System.out.println("Bugün size PİKNİK etkinliğini yapamayı öneriyoruz.");
+            }
+            if (sicaklik >= 10 ) {
+                System.out.println("Bugün size SİNEMA etkinliğini yapamayı öneriyoruz.");
+            }
+        }else {
+            System.out.println("Bugün size YÜZME etkinliğini yapamayı öneriyoruz.");
+        }
+    }
+}
