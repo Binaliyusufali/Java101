@@ -1,0 +1,32 @@
+package Giris;
+import java.util.Scanner;
+public class kombinasyonAlma {
+    public static void main(String[] args) {
+        int com;
+        int n;
+        int r;
+        int totalN =1, totalR=1, totalNR = 1;
+
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Küme eleman sayısını giriniz: ");
+        n = scan.nextInt();
+
+        System.out.print("Kaç grup oluşsun: ");
+        r = scan.nextInt();
+
+        int nr= n - r;
+
+        for (int i = 1 ; i<=n ; i++){
+            totalN *=i;
+        }
+        for (int j = 1 ; j<=r ; j++){
+            totalR *=j;
+        }
+        for (int k = 1 ; k<=nr ; k++){
+            totalNR *=k;
+        }
+
+        com = (totalN / (totalR * totalNR ));
+        System.out.println(n + " sayısının " + r + " kombinasyonu :" + com);
+    }
+}
