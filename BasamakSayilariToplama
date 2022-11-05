@@ -1,0 +1,17 @@
+package Giris;
+import java.util.Scanner;
+public class BasamakSayilariToplami {
+    public static void main(String[] args) {
+        Scanner inp = new Scanner(System.in);
+        System.out.println("Bir Sayı giriniz: ");
+        int number = inp.nextInt();
+        int sonSayi=0;
+
+        while (number != 0){
+            sonSayi += number % 10;
+            number = number / 10;
+        }
+        System.out.println(sonSayi);
+
+    }
+}
