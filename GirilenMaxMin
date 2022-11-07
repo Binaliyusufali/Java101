@@ -1,0 +1,29 @@
+package Giris;
+import java.util.Scanner;
+public class GirilenMaxMin {
+    public static void main(String[] args) {
+        Scanner inp= new Scanner(System.in);
+        System.out.print("Kaç Sayı gireceksiniz?");
+        int n = inp.nextInt();
+        int max=0;
+        int min=0;
+
+        for (int i=1; i<=n; i++){
+            System.out.println(i+ ".sayıyı giriniz.");
+            int number = inp.nextInt();
+
+            if (i == 1){
+                min = number;
+                max = number;
+            }
+            if(number > max){
+                max = number;
+            }else {
+                min = number;
+            }
+        }
+        System.out.println(max);
+        System.out.println(min);
+    }
+}
+
