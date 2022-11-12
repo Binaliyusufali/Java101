@@ -1,0 +1,33 @@
+package Giris;
+
+import java.util.Scanner;
+
+public class DeseneGoreMethod {
+
+
+    static void desen(int sayi) {
+        int caunt = 0;
+
+        while (sayi > 0) {
+
+            System.out.print(sayi + " ");
+            sayi -= 5;
+            caunt++;
+
+        }
+
+        for (int i = 1; i <= caunt + 1; i++) {
+            System.out.print(" " + sayi + " ");
+            sayi += 5;
+        }
+    }
+
+        public static void main (String[]args){
+            Scanner scan = new Scanner(System.in);
+            System.out.print("N Sayısını: ");
+            int n = scan.nextInt();
+            desen(n);
+        }
+
+    }
+
