@@ -1,0 +1,23 @@
+package Giris;
+
+import java.util.Scanner;
+
+public class UsAlmaRecursive {
+    static int r(int base, int pow) {
+        if (pow == 0) {
+            return 1;
+        } else {
+            return base * r(base, pow - 1);
+        }
+
+    }
+
+    public static void main(String[] args) {
+        Scanner inp = new Scanner(System.in);
+        System.out.println("Taban değerini giriniz: ");
+        int base = inp.nextInt();
+        System.out.println("Üs değerini giriniz: ");
+        int pow = inp.nextInt();
+        System.out.println("cevap: " + r(base, pow));
+    }
+}
